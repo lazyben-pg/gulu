@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'production',
-  entry: './lib/index.tsx',
+  entry: {
+    index: './lib/index.tsx'
+  },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
     library: 'Gu',
@@ -17,8 +19,8 @@ module.exports = {
       }
     ]
   },
-  plugins:[new HtmlWebpackPlugin({
-    title:'gulu',
+  plugins: [new HtmlWebpackPlugin({
+    title: 'gulu',
     template: 'index.html'
   })
   ],
