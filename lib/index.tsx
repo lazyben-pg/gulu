@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 //import Button from './button'
 
 function App(){
-  return React.createElement('div',null,'button')
+  return (
+    <div>button</div>
+  )
 }
 
-ReactDOM.render(<App></App>, document.body)
+ReactDOM.render(<App></App>, document.querySelector('#root'))
