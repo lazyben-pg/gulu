@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Icon from './icon'
 //import Button from './button'
 
-function App(){
+function App() {
   return (
-    <div>button</div>
+    <React.Fragment>
+      <Icon name="wechat" />
+      <Icon name="alipay" />
+    </React.Fragment>
   )
 }
 
