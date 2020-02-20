@@ -3,9 +3,14 @@ import { linkPreClass } from '../classes'
 
 const lc = linkPreClass('gulu-layout')
 
-const Content:React.FunctionComponent = () => {
-  return(
-    <div className={lc('content')}>content</div>
+interface ContentProps extends React.HtmlHTMLAttributes<HTMLElement> {}
+
+const Content: React.FunctionComponent<ContentProps> = (props) => {
+  const { className, ...rest } = props
+  return (
+    <div className={lc('content', { extra: className })} {...rest}>
+      content
+    </div>
   )
 }
 
