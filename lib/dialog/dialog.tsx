@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode } from 'react'
 import ReactDOM from 'react-dom'
 import './dialog.scss'
 import { Icon } from '../index'
-import { linkPreClass } from '../classes'
+import { linkPreClass } from '../helpers/classes'
 
 interface DialogProps {
   visible: boolean

@@ -1,5 +1,5 @@
 import React from 'react'
-import { linkPreClass } from '../classes'
+import { linkPreClass } from '../helpers/classes'
 
 const lc = linkPreClass('gulu-layout')
 
