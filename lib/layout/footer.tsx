@@ -9,7 +9,7 @@ const Footer: React.FunctionComponent<FooterProps> = (props) => {
   const { className, ...rest } = props
   return (
     <div className={lc('footer', { extra: className })} {...rest}>
-      footer
+      {props.children}
     </div>
   )
 }

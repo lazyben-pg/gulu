@@ -20,6 +20,7 @@ const linkPreClass = (preName: string) => {
 
   return function linkClass(name?: string | ClassToggles, options?: Options) {
     //{'': true, hasSider: true, active:false}
+    //还可以重构，不过可读性会变差。
     let result,
       name2
     if (typeof name === 'string' || typeof name === 'undefined') {

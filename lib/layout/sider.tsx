@@ -9,7 +9,7 @@ const Sider: React.FunctionComponent<SiderProps> = (props) => {
   const { className, ...rest } = props
   return (
     <div className={lc('sider', { extra: className })} {...rest}>
-      sider
+      {props.children}
     </div>
   )
 }
